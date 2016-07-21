@@ -10,25 +10,5 @@
   <%= @cohort.class_code %>
 </p>
 
-<p>
-  <strong>Event type:</strong>
-  <%= @cohort.event_type %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @cohort.notes %>
-</p>
-
-<p>
-  <strong>Time to generate:</strong>
-  <%= @cohort.time_to_generate %>
-</p>
-
-<p>
-  <strong>Owner:</strong>
-  <%= @cohort.owner %>
-</p>
-
 <%= link_to 'Edit', edit_cohort_path(@cohort) %> |
 <%= link_to 'Back', cohorts_path %>
