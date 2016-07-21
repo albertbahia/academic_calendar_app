@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'pry', '~> 0.10.4'
 ruby '2.3.1'
 gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
