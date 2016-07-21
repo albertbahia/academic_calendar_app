@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-07-20
+  class_code: MyString
+  event_type: MyString
+  notes: MyString
+  time_to_generate: 1
+  owner: MyString
+
+two:
+  date: 2016-07-20
+  class_code: MyString
+  event_type: MyString
+  notes: MyString
+  time_to_generate: 1
+  owner: MyString
