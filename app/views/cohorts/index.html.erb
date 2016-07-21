@@ -13,7 +13,6 @@
   <tbody>
     <% @cohorts.each do |cohort| %>
       <tr>
-        <td><%= cohort.date %></td>
         <td><%= cohort.class_code %></td>
         <td><%= link_to 'Show', cohort %></td>
         <td><%= link_to 'Edit', edit_cohort_path(cohort) %></td>
@@ -26,3 +25,4 @@
 <br>
 
 <%= link_to 'New Cohort', new_cohort_path %>
+<%= link_to 'Home', '/' %>
