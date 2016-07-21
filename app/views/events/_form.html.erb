@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :cohort %>
+    <%= f.collection_select :cohort, Cohort.order(:class_code),:id, :class_code %>
+  </div>
+
+  <div class="field">
     <%= f.label :date %>
     <%= f.date_select :date %>
   </div>
