@@ -9,5 +9,6 @@ class ApplicationController < ActionController::Base
     # binding.pry
 
     @events = Event.all
+    # binding.pry
   end
 end

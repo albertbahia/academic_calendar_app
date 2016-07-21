@@ -23,10 +23,10 @@
         </tr>
       </thead>
       <tbody>
-        <% @events.each do |event| %>
-          <tr>
-            <td><%= event.event_type %></td>
-          </tr>
+        <% cohort.events.each do |event| %>
+        <tr>
+          <td><%= event.event_type %></td>
+        </tr>
         <% end %>
       </tbody>
     <% end %>
