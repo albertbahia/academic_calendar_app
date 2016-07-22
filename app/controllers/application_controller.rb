@@ -3,9 +3,6 @@ class ApplicationController < ActionController::Base
 
   def index
     @cohorts = Cohort.all
-    cohort_ids = @cohorts.map do |cohort|
-      cohort.id
-    end
   end
-  
+
 end
