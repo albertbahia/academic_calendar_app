@@ -68,12 +68,33 @@
 
   <div class="field">
     <%= f.label :notes %>
-    <%= f.text_field :notes %>
+    <%= f.text_area :notes %>
+    <br>
+    <%= f.select(:notes) do %>
+      <% [["week 8 you'd have to notify the instructional staff via slack, push up the study guide to the class repo "],
+      ["at the start of week 10, generate the week 1 assessment through survey gizmo"],
+      ["at the end of week 10, alerts instructional staff to slack out the link to the assessment "],
+      ["at the end of week 11, push answer key document to the class repo and email all students who've submitted the assessment their results and link to that answer key document "],
+      ["week 17 you'd have to notify the instructional staff via slack, push up the study guide to the class repo "],
+      ["at the start of week 19, generate the week 1 assessment through survey gizmo"],
+      ["at the end of week 19, alerts instructional staff to slack out the link to the assessment"],
+      ["at the end of week 20,  push answer key document to the class repo, email all students who've submitted the assessment their results and a link to the answer key for them to self grade"],
+      ["week 21 you'd have to notify the instructional staff via slack, push up the study guide to the class repo "],
+      ["at the start of week 24, generate the week 1 assessment through survey gizmo"],
+      ["at the end of week 24, alerts instructional staff to slack out the link to the assessment"],
+      ["at the end of week 24,  push answer key document to the class repo, email all students who've submitted the assessment their results and a link to the answer key for them to self grade"]].each do |note| %>
+        <%= content_tag(:option, note.first) %>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="field">
     <%= f.label :owner %>
-    <%= f.text_field :owner %>
+    <%= f.select(:owner) do %>
+      <% [["Student Success Manager"], ["Academic - Albert"], ["Outcomes"], ["Instructional Staff"]].each do |person| %>
+        <%= content_tag(:option, person.first) %>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="actions">
