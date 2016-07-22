@@ -7,9 +7,6 @@
         <tr>
           <th>Class code</th>
           <td><%= cohort.class_code %></td>
-          <td><%= link_to 'Show', cohort %></td>
-          <td><%= link_to 'Edit', edit_cohort_path(cohort) %></td>
-          <td><%= link_to 'Destroy', cohort, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
         <tr>
           <th>Date</th>
@@ -29,6 +26,13 @@
         <% end %>
       </tbody>
     </tbody>
+    <tfoot>
+      <tr>
+        <td><%= link_to 'Show', cohort %></td>
+        <td><%= link_to 'Edit', edit_cohort_path(cohort) %></td>
+        <td><%= link_to 'Destroy', cohort, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    </tfoot>
   </table>
 <% end %>
 
