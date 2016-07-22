@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+table, th {
+  border: solid
+}
+
+.cohort {
+    margin: 10px 0px 10px 0px;
+}
