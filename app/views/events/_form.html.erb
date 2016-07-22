@@ -23,7 +23,42 @@
 
   <div class="field">
     <%= f.label :event_type %>
-    <%= f.text_field :event_type %>
+    <%= f.select(:event_type) do %>
+      <% [["university, cohort, class creation in bootcampspot"],
+        ["Data Entry for all these dates into albert's academic calendar app"],
+        ["Pre Work created in BCS"],
+        ["Students added to BCS"],
+        ["Instructional Staff added to BCS"],
+        ["Gitlab repository creation"],
+        ["Students added to gitlab group and project"],
+        ["Invite Instructional staff to repository, invite pavan, jed, nate, ahmed, warren, joe cardin"],
+        ["Notify Instructional Staff and academic team that repository was created and they've been invited"],
+        ["Syllabus Generation and adding syllabus to the repository"],
+        ["Slack Room Generation"],
+        ["Students invited to slack room, instructional staff invited to slack room"],
+        ["AMA"],
+        ["Dry Run"],
+        ["Class Start Date"],
+        ["Assessment 1 Study Guide"],
+        ["Generate Assessment 1"],
+        ["Assessment 1"],
+        ["Assessment 1 Results"],
+        ["Assessment 2 Study Guide"],
+        ["Generate Assessment 2"],
+        ["Assessment 2"],
+        ["Assessment 2 Results"],
+        ["Assessment 3 Study Guide"],
+        ["Generate Assessment 3"],
+        ["Assessment 3 "],
+        ["Assessment 3 Results"],
+        ["Demo Day"],
+        ["Interview Blitzes will go here as well"],
+        ["Project 1 Internal Demo Day"],
+        ["Project 2 Internal Demo Day"],
+        ["Project 3 Internal Demo Day"]].each do |type| %>
+        <%= content_tag(:option, type.first) %>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="field">
