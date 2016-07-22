@@ -6,9 +6,6 @@ class ApplicationController < ActionController::Base
     cohort_ids = @cohorts.map do |cohort|
       cohort.id
     end
-    # binding.pry
-
-    @events = Event.all
-    # binding.pry
   end
+  
 end
