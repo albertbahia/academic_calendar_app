@@ -15,7 +15,7 @@
   </thead>
 
   <tbody>
-    <% @events.each do |event| %>
+    <% @events.sort_by(&:date).each do |event| %>
       <tr>
         <td><%= event.date %></td>
         <td><%= event.event_type %></td>
