@@ -64,6 +64,11 @@
   <div class="field">
     <%= f.label :time_to_generate %>
     <%= f.number_field :time_to_generate %>
+    <%= f.select(:time_to_generate) do %>
+      <% [[0.5], [1], [1.5], [2], [2.5], [3], [3.5]].each do |hour| %>
+        <%= content_tag(:option, hour.first) %>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="field">
